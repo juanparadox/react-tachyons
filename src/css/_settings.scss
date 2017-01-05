@@ -1,0 +1,105 @@
+/* SETTINGS */
+
+// Colors
+$color : (
+	'grey' : rgb(148, 143, 132),
+	'gold' : rgb(207, 174, 107),
+	'parchment' : rgb(231, 229, 223),
+	'crimson' : rgb(70, 0, 0),
+	'red' : rgb(120, 0, 1),
+
+	primary : rgb(0, 116, 190),
+
+	danger : rgb(177, 40, 37),
+	info : rgb(170, 206, 229),
+	success : rgb(102, 134, 0),
+	warning : rgb(243, 124, 42),
+
+	'white' : rgb(255, 255, 255),
+	white-5 : rgb(243, 243, 243),
+	white-20 : rgb(204, 204, 204),
+	'black' : rgb(38, 38, 38),
+
+	white--transparent : rgba(255, 255, 255, 0.8),
+	black--transparent : rgba(0, 0, 0, 0.6),
+
+	code-green : rgb(110, 200, 0),
+
+	inherit : inherit,
+
+	'transparent' : transparent
+);
+
+// Display
+$display : (
+	block : block,
+	flex : flex,
+	inline : inline,
+	inlineBlock : inline-block,
+	none : none
+);
+
+// Sizes  (Based on 1.2 ratio)
+$size : (
+	0 : 0rem,
+	1 : 0.85rem,
+	2 : 1rem,
+	// 14.4px
+	3 : 1.2rem,
+	4 : 1.4rem,
+	5 : 1.7rem,
+	6 : 2rem,
+	7 : 2.5rem,
+	8 : 3rem,
+	9 : 3.6rem,
+	10 : 4.3rem,
+	11 : 5.2rem,
+	12 : 6.2rem,
+	13 : 7.4rem,
+	14 : 8.9rem,
+	15 : 10.7rem
+);
+
+// Width
+$width : (
+	eigth : 12.5,
+	fifth : 20,
+	fourth : 25,
+	third : 33.33,
+	half : 50,
+	whole : 100
+);
+
+// Fonts
+
+@font-face {
+    font-family: Gotham-Light;
+    src: url(../fonts/gothamhft-light-webfont.ttf);
+}
+
+@font-face {
+    font-family: Gotham-Book;
+    src: url(../fonts/gothamhft-book-webfont.ttf);
+}
+
+@font-face {
+    font-family: Gotham-Medium;
+    src: url(../fonts/gothamhft-medium-webfont.ttf);
+}
+
+@font-face {
+    font-family: Gotham-Bold;
+    src: url(../fonts/gothamhft-bold-webfont.ttf);
+}
+
+@font-face {
+    font-family: Gotham-Thin;
+    src: url(../fonts/gothamhft-xlight-webfont.ttf);
+}
+
+// Keyframes
+
+@-webkit-keyframes rotate {
+	0%   { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}

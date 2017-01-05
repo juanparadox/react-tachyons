@@ -1,0 +1,12 @@
+/* GENERIC */
+
+* {
+	@extend .boxSizing-borderBox, .borderWidth-0, .fontFamily-book, .fontColor-inherit, .fontSize-4, .margin-0, .padding-0, .verticalAlign-top;
+	-webkit-font-smoothing: antialiased;
+	font-weight : 500;
+}
+
+html {
+	@extend .fontColor-black;
+	font-size : 12px;
+}

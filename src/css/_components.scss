@@ -1,0 +1,122 @@
+/* COMPONENTS */
+
+/* STYLE GUIDE - COLOR PALETTE */
+.color-palette {
+
+	div div {
+		@extend .fontFamily-minion, .fontSize-5, .textAlign-center, .padding-13;
+	}
+}
+
+/* STYLE GUIDE - GRID */
+.grid {
+	@extend .display-flex, .flexWrap-wrap, .flexDirection-row, .width-whole, .borderRadius-1, .marginBottom-4;
+	
+	code {
+		@extend .marginTop-4;
+	}
+
+	&.layout,
+	&.position {
+
+		div {
+			@extend .display-flex;
+
+			div {
+				@extend .marginVertical-5;
+			}
+		}
+
+		code {
+			@extend .marginTop-0;
+		}
+	}
+}
+
+/* DROPDOWNS */
+.dropdown {
+	@extend .position-relative;
+
+	input {
+		@extend .bgRepeat-noRepeat, .bgSize-1, .marginBottom-0, .paddingRight-9;
+
+		background-position: right 1.7rem center;
+	}
+
+	.menu {
+		@extend .display-none, .bgColor-white, .borderWidth-1, .borderColor-white-20, .borderWidth-1, .borderRadius-1, .listStyleType-none, .margin-0, .maxHeight-15, .overflowY-scroll, .overflowX-hidden, .position-absolute, .width-whole;
+		z-index: 9999;
+		.item {
+			@extend .fontSize-2, .paddingVertical-2, .paddingHorizontal-5;
+	    	white-space: normal;
+	    	word-wrap: normal;
+
+	    	&:hover {
+	    		@extend .bgColor-black, .fontColor-white;
+	    	}
+		}
+	}
+}
+
+/* MODAL COMPONENT STYLES */
+.modal {
+	@extend .bgColor-white, .borderRadius-1, .left-half, .paddingTop-6, .position-absolute, .top-half;
+	transform: translate(-50%, -50%);
+	width: 95%;
+	max-height: 95%;
+
+	&__container {
+		@extend .bgColor-black--transparent, .bottom-0, .left-0, .position-fixed, .right-0, .textAlign-center, .top-0;
+	}
+
+	&--small {
+		@extend .paddingVertical-13, .paddingHorizontal-8;
+		width: 75%;
+		max-height: 75%;
+	}
+
+	&__close-button {
+		@extend .bgColor-transparent, .fontColor-grey, .fontSize-8, .margin-0, .padding-0, .position-absolute, .right-2, .top-2;
+		line-height: .2em;
+	}
+
+	&__buttons button {
+		@extend .fontSize-2, .margin-0;
+	}
+
+}
+
+
+/* INPUT COMPONENT STYLES */
+.input--calendar,
+.input--location{
+	@extend .bgRepeat-noRepeat, .bgPositionY-center, .paddingLeft-10;
+}
+
+.input {
+	&--calendar {
+		@extend .bgPositionX-2;
+	}
+
+	&--location {
+		@extend .bgPositionX-4;
+	}
+}
+
+.checkbox,
+.radio {
+	@extend .display-inlineBlock, .position-relative;
+}
+
+.button {
+	&--isLoading {
+		@extend .fontColor-transparent, .cursor-progress, .position-relative;
+
+		&:after{
+			@extend .bgRepeat-noRepeat, .bgSize-whole, .content-empty, .display-block, .height-6, .width-6, .position-absolute;
+			top: calc(50% - 1rem);
+			left: calc(50% - 1rem);
+			animation: rotate 1s ease infinite;
+		}
+	}
+}
