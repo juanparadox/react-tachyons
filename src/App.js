@@ -5,6 +5,7 @@ import tachyons from "tachyons";
 
 // Components
 import AspectRatio from './components/layout/AspectRatio';
+import CenteredContainer from './components/layout/CenteredContainer';
 
 class App extends Component {
   render() {
@@ -20,8 +21,8 @@ class App extends Component {
         </div>
         <article id="layout" className="mw5 mw6-ns center pt4">
             <h2 className="f2 lh-title">Layout</h2>
-            <section id="aspect-ratio">
-                <h3 className="f3 lh-copy">Aspect Ratio</h3>
+            <section id="aspect-ratio" className="dn">
+                <h3 className="f3 lh-copy">AspectRatio</h3>
                 16x9
                 <AspectRatio img="http://mrmrs.io/photos/001.jpg" ratio="16x9"/>
                 1x1
@@ -44,6 +45,15 @@ class App extends Component {
                 <AspectRatio img="http://mrmrs.io/photos/001.jpg" ratio="8x5"/>
                 9x16
                 <AspectRatio img="http://mrmrs.io/photos/001.jpg" ratio="9x16"/>
+            </section>
+            <section id="centered-container">
+                <h3 className="f3 lh-copy">CenteredContainer</h3>
+                <CenteredContainer>
+                    <h1 className="mt0">Centered Container</h1>
+                    <p className="lh-copy measure">
+                        Combine width or max-width values with the center class to create a centered container for your content.
+                    </p>
+                </CenteredContainer>
             </section>
         </article>
       </div>
