@@ -5,6 +5,16 @@ import tachyons from "tachyons";
 
 // Components
 import Button from "./components/Button.js";
+
+// Text
+import LargeParagraph from "./components/text/LargeParagraph.js";
+import NarrowParagraph from "./components/text/NarrowParagraph.js";
+import Paragraph from "./components/text/Paragraph.js";
+import SmallNarrowParagraph from "./components/text/SmallNarrowParagraph.js";
+import SmallParagraph from "./components/text/SmallParagraph.js";
+import WideParagraph from "./components/text/WideParagraph.js";
+import TitleSubtitleCentered from "./components/text/TitleSubtitleCentered.js";
+
 class App extends Component {
   render() {
     return (
@@ -17,27 +27,29 @@ class App extends Component {
             stateless react components and a whole lot of tachyons
           </p>
         </div>
-        <div className="pv5 center mw9">
-          <p>Buttons</p>
-          <div className="fl w-25 pv3">
-            <Button text="regular" />
+        <section className="ph5">
+          <div className="pv4 center mw9">
+            <p className="f3">Buttons</p>
+            <Button text="Click Me"/>
           </div>
-          <div className="fl w-25 pv3">
-            <Button text="long" type="long" />
+          <div className="pv4 center mw9">
+            <p className="f3">Text</p>
+            Large Paragraph
+            <LargeParagraph/>
+            Narrow Paragraph
+            <NarrowParagraph/>
+            Paragraph
+            <Paragraph/>
+            Small Narrow Paragraph
+            <SmallNarrowParagraph/>
+            Small Paragraph
+            <SmallParagraph/>
+            Wide Paragraph
+            <WideParagraph/>
+            Title Subtitle Centered
+            <TitleSubtitleCentered/>
           </div>
-          <div className="fl w-25 pv3">
-            <Button text="disabled" type="disabled" />
-          </div>
-          <div className="fl w-25 pv3">
-            <Button text="long-disabled" type="long-disabled" />
-          </div>
-          <div className="fl w-25 pv3">
-            <Button text="cancel" type="cancel" />
-          </div>
-          <div className="fl w-25 pv3">
-            <Button text="long-cancel" type="long-cancel" />
-          </div>
-        </div>
+        </section>
       </div>
     );
   }
