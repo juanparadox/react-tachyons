@@ -14,7 +14,7 @@ function renderColumn(content, key, size){
 
 function renderRow(count, children){
     let row = [],
-        size = 100 / count;
+        size = Math.round(100 / count);
     for (var i = 0; i < count; i++) {
         row.push(
             renderColumn(children[i], i, size)
@@ -25,5 +25,5 @@ function renderRow(count, children){
 
 export default ({ count, children }) =>
     <div className="cf">
-        { renderRow(5, children) }
+        { renderRow(count, children) }
     </div>

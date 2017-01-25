@@ -3,10 +3,13 @@ import React, {Component} from "react";
 import logo from "./logo.svg";
 import tachyons from "tachyons";
 
-// Components
+// Layout
 import AspectRatio from './components/layout/AspectRatio';
 import CenteredContainer from './components/layout/CenteredContainer';
 import FiveColumn from './components/layout/FiveColumn';
+import FourColumn from './components/layout/FourColumn';
+import ThreeColumn from './components/layout/ThreeColumn';
+import TwoColumn from './components/layout/TwoColumn';
 
 class App extends Component {
   render() {
@@ -61,6 +64,18 @@ class App extends Component {
                 <FiveColumn>
                     <p>1</p><p>2</p><p>3</p><p>4</p><p>5</p>
                 </FiveColumn>
+                <h3 className="f3 lh-copy">FourColumn</h3>
+                <FourColumn>
+                    <p>1</p><p>2</p><p>3</p><p>4</p>
+                </FourColumn>
+                <h3 className="f3 lh-copy">ThreeColumn</h3>
+                <ThreeColumn>
+                    <p>1</p><p>2</p><p>3</p><p>4</p>
+                </ThreeColumn>
+                <h3 className="f3 lh-copy">TwoColumn</h3>
+                <TwoColumn>
+                    <p>1</p><p>2</p><p>3</p><p>4</p>
+                </TwoColumn>
             </section>
         </article>
       </div>
