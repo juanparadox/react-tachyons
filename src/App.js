@@ -6,6 +6,7 @@ import tachyons from "tachyons";
 // Components
 import AspectRatio from './components/layout/AspectRatio';
 import CenteredContainer from './components/layout/CenteredContainer';
+import FiveColumn from './components/layout/FiveColumn';
 
 class App extends Component {
   render() {
@@ -54,6 +55,12 @@ class App extends Component {
                         Combine width or max-width values with the center class to create a centered container for your content.
                     </p>
                 </CenteredContainer>
+            </section>
+            <section id="five-column">
+                <h3 className="f3 lh-copy">FiveColumn</h3>
+                <FiveColumn>
+                    <p>1</p><p>2</p><p>3</p><p>4</p><p>5</p>
+                </FiveColumn>
             </section>
         </article>
       </div>
