@@ -1,5 +1,5 @@
 // React
-import React, {Component} from "react";
+import React from "react";
 
 // Layout
 import AspectRatio from './AspectRatio';
@@ -10,6 +10,7 @@ import ThreeColumn from './ThreeColumn';
 import TwoColumn from './TwoColumn';
 import FlagObject from './FlagObject';
 import FullBleed from './FullBleed';
+import FullScreenCenteredTitle from './FullScreenCenteredTitle';
 
 export default () => (
     <article id="layout" className="measure-wide center pt4">
@@ -75,7 +76,7 @@ export default () => (
             Bottom
             <FlagObject align="btm"/>
         </section>
-        <section id="full-bleed">
+        <section id="full-bleed" className="dn">
             <h3 className="f3 lh-copy">FullBleed</h3>
             16x9
             <FullBleed ratio="16x9"/>
@@ -99,6 +100,10 @@ export default () => (
             <FullBleed ratio="8x5"/>
             9x16
             <FullBleed ratio="9x16"/>
+        </section>
+        <section id="full-screen-centered-title">
+            <h3 className="f3 lh-copy">FullScreenCenteredTitle</h3>
+            <FullScreenCenteredTitle/>
         </section>
     </article>
 );
