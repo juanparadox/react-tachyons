@@ -18,6 +18,9 @@ import AnimateColor from "./components/links/AnimateColor.js";
 import DimNoUnderline from "./components/links/DimNoUnderline.js";
 import UnderlineOnHover from "./components/links/UnderlineOnHover.js";
 
+// Layout
+import LayoutExample from "./components/layout/LayoutExample";
+
 // Buttons
 import BasicPreviousNext from "./components/buttons/BasicPreviousNext.js";
 import BasicRoundedExtraSmall from "./components/buttons/BasicRoundedExtraSmall.js";
@@ -41,7 +44,7 @@ class App extends Component {
           </p>
         </div>
         <section className="ph5">
-          <div className="pv4 center mw9">
+          <div className="pv4 center mw9 dn">
             <p className="f3">Text</p>
             <p>Large Paragraph</p>
             <LargeParagraph/>
@@ -58,7 +61,7 @@ class App extends Component {
             <p>Title Subtitle Centered</p>
             <TitleSubtitleCentered/>
           </div>
-          <div className="pv4 center mw9">
+          <div className="pv4 center mw9 dn">
             <p className="f3">Links</p>
             <p>Animate Background Color</p>
             <AnimateBackgroundColor/>
@@ -69,7 +72,7 @@ class App extends Component {
             <p>Underline On Hover</p>
             <UnderlineOnHover/>
           </div>
-          <div className="pv4 center mw9">
+          <div className="pv4 center mw9 dn">
             <p className="f3">Buttons</p>
             <p>Basic Previous Next</p>
             <BasicPreviousNext/>
@@ -88,6 +91,7 @@ class App extends Component {
             <p>Pill</p>
             <Pill/>
           </div>
+          <LayoutExample/>
         </section>
       </div>
     );

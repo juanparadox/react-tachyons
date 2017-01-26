@@ -4,7 +4,7 @@ function renderColumn(content, key, size){
     let isEven = (key % 2 === 0)
     return(
         <div
-            className={ `fl w-${ size } tc pv5 ${ isEven ? 'bg-black-05' : 'bg-black-10'}` }
+            className={ `fl w-${ size } ${ isEven ? 'bg-black-05' : 'bg-black-10'}` }
             key={ key }
         >
             { content }
