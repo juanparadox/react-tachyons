@@ -31,6 +31,9 @@ import CenteredIcons from "./components/buttons/CenteredIcons.js";
 import PillGrow from "./components/buttons/PillGrow.js";
 import Pill from "./components/buttons/Pill.js";
 
+// Lists
+import ListsExample from "./components/lists/ListsExample";
+
 class App extends Component {
   render() {
     return (
@@ -92,6 +95,7 @@ class App extends Component {
             <Pill/>
           </div>
           <LayoutExample/>
+          <ListsExample/>
         </section>
       </div>
     );
