@@ -15,7 +15,7 @@ import FullScreenCenteredTitle from './FullScreenCenteredTitle';
 export default () => (
     <article id="layout" className="measure-wide center pt4">
         <h2 className="f2 lh-title">Layout</h2>
-        <section id="aspect-ratio" className="dn">
+        <section id="aspect-ratio">
             <h3 className="f3 lh-copy">AspectRatio</h3>
             16x9
             <AspectRatio img="http://mrmrs.io/photos/001.jpg" ratio="16x9"/>
@@ -40,7 +40,7 @@ export default () => (
             9x16
             <AspectRatio img="http://mrmrs.io/photos/001.jpg" ratio="9x16"/>
         </section>
-        <section id="centered-container" className="dn">
+        <section id="centered-container">
             <h3 className="f3 lh-copy">CenteredContainer</h3>
             <CenteredContainer>
                 <h1 className="mt0">Centered Container</h1>
@@ -49,7 +49,7 @@ export default () => (
                 </p>
             </CenteredContainer>
         </section>
-        <section id="columns" className="dn">
+        <section id="columns">
             <h3 className="f3 lh-copy">FiveColumn</h3>
             <FiveColumn>
                 <p>1</p><p>2</p><p>3</p><p>4</p><p>5</p>
@@ -67,7 +67,7 @@ export default () => (
                 <p>1</p><p>2</p><p>3</p><p>4</p>
             </TwoColumn>
         </section>
-        <section id="flag-object" className="dn">
+        <section id="flag-object">
             <h3 className="f3 lh-copy">FlagObject</h3>
             Top
             <FlagObject align="top"/>
@@ -76,7 +76,7 @@ export default () => (
             Bottom
             <FlagObject align="btm"/>
         </section>
-        <section id="full-bleed" className="dn">
+        <section id="full-bleed">
             <h3 className="f3 lh-copy">FullBleed</h3>
             16x9
             <FullBleed ratio="16x9"/>
