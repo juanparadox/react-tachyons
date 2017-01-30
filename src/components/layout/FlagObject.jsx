@@ -8,7 +8,6 @@ const Default = {
 }
 
 function getAlignment(text){
-    console.log('getAlignment', text);
     switch (text.toLowerCase()) {
         case "top":
             return "top"
