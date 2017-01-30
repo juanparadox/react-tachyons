@@ -6,6 +6,7 @@ import BlockItemDottedBorder from './BlockItemDottedBorder';
 import BorderSpaced from './BorderSpaced';
 import BorderTight from './BorderTight';
 import ContactPhone from './ContactPhone';
+import FollowerNotifications from './FollowerNotifications';
 
 export default () => (
     <article id="lists" className="measure-wide center pt4">
@@ -25,6 +26,10 @@ export default () => (
         <section id="contact-phone">
             <h3 className="f3 lh-copy">ContactPhone</h3>
             <ContactPhone />
+        </section>
+        <section id="contact-phone">
+            <h3 className="f3 lh-copy">FollowerNotifications</h3>
+            <FollowerNotifications />
         </section>
     </article>
 );
