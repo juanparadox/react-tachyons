@@ -8,6 +8,7 @@ import BorderTight from './BorderTight';
 import ContactPhone from './ContactPhone';
 import FollowerNotifications from './FollowerNotifications';
 import Hashtags from './Hashtags';
+import ItemsImageTitlePrice from './ItemsImageTitlePrice';
 
 export default () => (
     <article id="lists" className="measure-wide center pt4">
@@ -35,6 +36,10 @@ export default () => (
         <section id="hashtags">
             <h3 className="f3 lh-copy">Hashtags</h3>
             <Hashtags />
+        </section>
+        <section id="items-image-title-price">
+            <h3 className="f3 lh-copy">ItemsImageTitlePrice</h3>
+            <ItemsImageTitlePrice />
         </section>
     </article>
 );
