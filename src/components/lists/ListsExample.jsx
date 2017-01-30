@@ -7,6 +7,7 @@ import BorderSpaced from './BorderSpaced';
 import BorderTight from './BorderTight';
 import ContactPhone from './ContactPhone';
 import FollowerNotifications from './FollowerNotifications';
+import Hashtags from './Hashtags';
 
 export default () => (
     <article id="lists" className="measure-wide center pt4">
@@ -27,9 +28,13 @@ export default () => (
             <h3 className="f3 lh-copy">ContactPhone</h3>
             <ContactPhone />
         </section>
-        <section id="contact-phone">
+        <section id="follower-notifications">
             <h3 className="f3 lh-copy">FollowerNotifications</h3>
             <FollowerNotifications />
+        </section>
+        <section id="hashtags">
+            <h3 className="f3 lh-copy">Hashtags</h3>
+            <Hashtags />
         </section>
     </article>
 );
