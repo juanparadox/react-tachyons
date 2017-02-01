@@ -9,6 +9,7 @@ import ContactPhone from './ContactPhone';
 import FollowerNotifications from './FollowerNotifications';
 import Hashtags from './Hashtags';
 import ItemsImageTitlePrice from './ItemsImageTitlePrice';
+import LinksInline from './LinksInline';
 
 export default () => (
     <article id="lists" className="measure-wide center pt4">
@@ -40,6 +41,15 @@ export default () => (
         <section id="items-image-title-price">
             <h3 className="f3 lh-copy">ItemsImageTitlePrice</h3>
             <ItemsImageTitlePrice />
+        </section>
+        <section id="links-inline">
+            <h3 className="f3 lh-copy">LinksInline</h3>
+            <code className="silver">{'<LinksLinline />'}</code>
+            <LinksInline />
+            <code className="silver">{'<LinksInline size="large" hoverColor="blue" />'}</code>
+            <LinksInline size="large" hoverColor="blue" />
+            <code className="silver">{'<LinksInline size="small" hoverColor="orange" withBorders />'}</code>
+            <LinksInline size="small" hoverColor="orange" withBorders="true" />
         </section>
     </article>
 );
