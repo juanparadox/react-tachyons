@@ -28,6 +28,9 @@ import CenteredIcons from "./components/buttons/CenteredIcons.js";
 import PillGrow from "./components/buttons/PillGrow.js";
 import Pill from "./components/buttons/Pill.js";
 
+// Forms
+import CheckboxList from "./components/forms/CheckboxList.js";
+
 class App extends Component {
   render() {
     return (
@@ -87,6 +90,11 @@ class App extends Component {
             <PillGrow/>
             <p>Pill</p>
             <Pill/>
+          </div>
+          <div className="pv4 center mw9">
+            <p className="f3">Forms</p>
+            <p>Checkbox List</p>
+            { /*<CheckboxList/> */}
           </div>
         </section>
       </div>
