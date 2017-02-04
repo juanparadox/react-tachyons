@@ -11,7 +11,7 @@ function getSizeClasses(size){
     }
 }
 
-const LinksInline = ({ list, size }) => (
+const SlabStat = ({ list, size }) => (
     <div>
         { list.map(({title, value}, i) =>
             <dl className="dib mr5" key={i}>
@@ -26,7 +26,7 @@ const LinksInline = ({ list, size }) => (
     </div>
 );
 
-LinksInline.defaultProps = {
+SlabStat.defaultProps = {
     list: [
             {
                 title: 'Closed Issues',
@@ -55,7 +55,7 @@ LinksInline.defaultProps = {
         ]
 };
 
-LinksInline.propTypes = {
+SlabStat.propTypes = {
     list: React.PropTypes.arrayOf(
             React.PropTypes.shape({
                 title: React.PropTypes.string,
@@ -68,4 +68,4 @@ LinksInline.propTypes = {
     size: React.PropTypes.oneOf(['large', 'small'])
 };
 
-export default LinksInline;
+export default SlabStat;
