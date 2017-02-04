@@ -1,7 +1,7 @@
 // React
 import React, {Component} from "react";
-import logo from "./logo.svg";
-import tachyons from "tachyons";
+// eslint-disable-next-line
+import tachyons from "tachyons"; // TODO: determine the best way to load tachyons in...
 
 // Text
 import TextExample from "./components/text/TextExample";
@@ -17,6 +17,9 @@ import ButtonExample from "./components/buttons/ButtonExample";
 
 // Forms
 import FormExample from "./components/forms/FormsExample";
+
+// Lists
+import ListsExample from "./components/lists/ListsExample";
 
 class App extends Component {
   render() {
@@ -36,6 +39,7 @@ class App extends Component {
           <ButtonExample/>
           <FormExample/>
           <LayoutExample/>
+          <ListsExample/>
         </section>
       </div>
     );
