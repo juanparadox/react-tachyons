@@ -11,6 +11,7 @@ import Hashtags from './Hashtags';
 import ItemsImageTitlePrice from './ItemsImageTitlePrice';
 import LinksInline from './LinksInline';
 import SlabStat from './SlabStat';
+import TitleText from './TitleText';
 
 export default () => (
     <article id="lists" className="measure-wide center pt4">
@@ -66,6 +67,10 @@ export default () => (
                 {'<SlabStat size="large" />'}
             </code>
             <SlabStat size="large" />
+        </section>
+        <section id="title-text">
+            <h3 className="f3 lh-copy">TitleText</h3>
+            <TitleText />
         </section>
     </article>
 );
