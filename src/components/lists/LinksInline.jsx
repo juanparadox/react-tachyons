@@ -75,7 +75,7 @@ LinksInline.propTypes = {
                 url: React.PropTypes.string
             })
         ).isRequired,
-    size: React.PropTypes.string,
+    size: React.PropTypes.oneOf(['large', 'small']),
     hoverColor: React.PropTypes.string,
     withBorders: React.PropTypes.bool
 };
