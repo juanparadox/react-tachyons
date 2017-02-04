@@ -1,7 +1,7 @@
 // React
 import React, {Component} from "react";
-import logo from "./logo.svg";
-import tachyons from "tachyons";
+// eslint-disable-next-line
+import tachyons from "tachyons"; // TODO: determine the best way to load tachyons in...
 
 // Text
 import TextExample from "./components/text/TextExample";

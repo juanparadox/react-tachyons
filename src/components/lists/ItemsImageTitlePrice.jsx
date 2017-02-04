@@ -7,7 +7,7 @@ const ItemsImageTitlePrice = ({ list }) => (
             <li key={i}>
                 <a className="link dt w-100 bb b--black-10 pb2 mt2 dim blue" href={ href }>
                     <div className="dtc w3">
-                        <img src={ img } className="db w-100"/>
+                        <img src={ img } role="presentation" className="db w-100"/>
                     </div>
                     <div className="dtc v-top pl2">
                         <h1 className="f6 f5-ns fw6 lh-title black mv0">{ title }</h1>
