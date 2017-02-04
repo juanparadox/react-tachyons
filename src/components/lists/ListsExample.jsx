@@ -10,6 +10,7 @@ import FollowerNotifications from './FollowerNotifications';
 import Hashtags from './Hashtags';
 import ItemsImageTitlePrice from './ItemsImageTitlePrice';
 import LinksInline from './LinksInline';
+import SlabStat from './SlabStat';
 
 export default () => (
     <article id="lists" className="measure-wide center pt4">
@@ -49,7 +50,22 @@ export default () => (
             <code className="silver">{'<LinksInline size="large" hoverColor="blue" />'}</code>
             <LinksInline size="large" hoverColor="blue" />
             <code className="silver">{'<LinksInline size="small" hoverColor="orange" withBorders />'}</code>
-            <LinksInline size="small" hoverColor="orange" withBorders="true" />
+            <LinksInline size="small" hoverColor="orange" withBorders />
+        </section>
+        <section id="slab-stat">
+            <h3 className="f3 lh-copy">SlabStat</h3>
+            <code className="silver">
+                {'<SlabStat />'}
+            </code>
+            <SlabStat />
+            <code className="silver">
+                {'<SlabStat size="small" />'}
+            </code>
+            <SlabStat size="small" />
+            <code className="silver">
+                {'<SlabStat size="large" />'}
+            </code>
+            <SlabStat size="large" />
         </section>
     </article>
 );
