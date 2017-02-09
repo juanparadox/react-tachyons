@@ -5,7 +5,7 @@ import CenteredIconsHoverGlow from "./CenteredIconsHoverGlow.js";
 import InlineText from "./InlineText.js";
 import SimpleLargeType from "./SimpleLargeType.js";
 import SmallPrint from "./SmallPrint.js";
-// import SocialCircles from "./SocialCircles.js";
+import SocialCircles from "./SocialCircles.js";
 // import SocialSimpleText from "./SocialSimpleText.js";
 // import SocialSimple from "./SocialSimple.js";
 // import SocialText from "./SocialText.js";
@@ -31,11 +31,11 @@ export default () => (
         	<h3 className="f3 lh-copy">Small Print</h3>
             <SmallPrint/>
         </section>
-        { /*
         <section id="social-circles">
         	<h3 className="f3 lh-copy">Social Circles</h3>
             <SocialCircles/>
         </section>
+        { /*
         <section id="social-simple-text">
         	<h3 className="f3 lh-copy">Social Simple Text</h3>
             <SocialSimpleText type="facebook"/>

@@ -6,7 +6,7 @@ const SimpleLargeType = ({ email, copyright, links }) =>
     <p className="f6 db b ttu lh-solid">{ copyright }</p>
     <div className="mt5">
       { links.map((item, index) => (
-          <a className="f6 dib pr2 mid-gray dim" title={ item.title } href={ item.href }>{ item.title }</a>
+          <a className="f6 dib pr2 mid-gray dim" title={ item.title } href={ item.href } key={ index }>{ item.title }</a>
         ))
       }
     </div>

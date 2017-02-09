@@ -4,7 +4,7 @@ const InlineText = ({ copyright, links }) =>
 	<footer className="bg-near-black white-80 pv5 pv6-l ph4">
     <p className="f6"><span className="dib mr4 mr5-ns">{ copyright }</span>
       { links.map((item, index) => (
-           <span><a className={ "link white-80 " + item.hover } href={ item.href }>{ item.text }</a>{ index !== links.length - 1 && " / "}</span>
+           <span key={ index }><a className={ "link white-80 " + item.hover } href={ item.href }>{ item.text }</a>{ index !== links.length - 1 && " / "}</span>
         ))
       }
     </p>

@@ -5,7 +5,7 @@ const SmallPrint = ({ companyName, links }) =>
   <small className="f6 db tc">© 2016 <b className="ttu">{ companyName }</b>., All Rights Reserved</small>
     <div className="tc mt3">
       { links.map((item, index) => (
-          <a className="f6 dib ph2 link mid-gray dim" title={ item.title } href={ item.href }>{ item.title }</a>
+          <a className="f6 dib ph2 link mid-gray dim" title={ item.title } href={ item.href } key={ index }>{ item.title }</a>
         ))
       }
     </div>
