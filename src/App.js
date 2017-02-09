@@ -21,6 +21,9 @@ import FormExample from "./components/forms/FormsExample";
 // Lists
 import ListsExample from "./components/lists/ListsExample";
 
+// Nav
+import NavExample from "./components/nav/NavExample";
+
 class App extends Component {
   render() {
     return (
@@ -33,6 +36,7 @@ class App extends Component {
             stateless react components and a whole lot of tachyons
           </p>
         </div>
+        <NavExample/>
         <section className="ph5">
           <TextExample/>
           <LinksExample/>
