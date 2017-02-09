@@ -21,6 +21,9 @@ import FormExample from "./components/forms/FormsExample";
 // Lists
 import ListsExample from "./components/lists/ListsExample";
 
+// Footer
+import FooterExample from "./components/footers/FooterExample";
+
 class App extends Component {
   render() {
     return (
@@ -40,6 +43,7 @@ class App extends Component {
           <FormExample/>
           <LayoutExample/>
           <ListsExample/>
+          <FooterExample/>
         </section>
       </div>
     );
