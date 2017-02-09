@@ -1,6 +1,6 @@
 import React from "react";
 
-const CircleAvatarTitleSubtitle = ({ imgSrc, h1Text. h2Text }) =>
+const CircleAvatarTitleSubtitle = ({ imgSrc, h1Text, h2Text }) =>
 	<header className="tc pv4 pv5-ns">
     <img src={ imgSrc } className="br-100 pa1 ba b--black-10 h3 w3" alt="avatar"/>
     <h1 className="f5 f4-ns fw6 mid-gray">{ h1Text }</h1>
