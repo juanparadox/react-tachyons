@@ -6,11 +6,11 @@ import InlineText from "./InlineText.js";
 import SimpleLargeType from "./SimpleLargeType.js";
 import SmallPrint from "./SmallPrint.js";
 import SocialCircles from "./SocialCircles.js";
-// import SocialSimpleText from "./SocialSimpleText.js";
-// import SocialSimple from "./SocialSimple.js";
-// import SocialText from "./SocialText.js";
-// import Social from "./Social.js";
-// import Studios from "./Studios.js";
+import SocialSimpleText from "./SocialSimpleText.js";
+import SocialSimple from "./SocialSimple.js";
+import SocialText from "./SocialText.js";
+import Social from "./Social.js";
+import Studios from "./Studios.js";
 
 export default () => (
 	<article id="footers" className="measure-wide center pt4">
@@ -35,10 +35,9 @@ export default () => (
         	<h3 className="f3 lh-copy">Social Circles</h3>
             <SocialCircles/>
         </section>
-        { /*
         <section id="social-simple-text">
         	<h3 className="f3 lh-copy">Social Simple Text</h3>
-            <SocialSimpleText type="facebook"/>
+            <SocialSimpleText/>
         </section>
         <section id="social-simple">
         	<h3 className="f3 lh-copy">Social Simple</h3>
@@ -55,6 +54,6 @@ export default () => (
         <section id="studios">
             <h3 className="f3 lh-copy">Studios</h3>
             <Studios/>
-        </section> */}
+        </section>
     </article>
 )
