@@ -1,42 +1,23 @@
 import React from "react";
 
-const InlineText = ({ copyright, links }) =>
-	<footer className="bg-near-black white-80 pv5 pv6-l ph4">
-    <p className="f6"><span className="dib mr4 mr5-ns">{ copyright }</span>
-      { links.map((item, index) => (
-           <span key={ index }><a className={ "link white-80 " + item.hover } href={ item.href }>{ item.text }</a>{ index !== links.length - 1 && " / "}</span>
-        ))
-      }
-    </p>
-  </footer>
+const RoundedAvatarTitleSubtitle = ({ imgSrc, h1Text, h2Text }) =>
+  <header className="tc pv4 pv5-ns">
+    <img src={ imgSrc } className="br3 ba b--black-10 h3 w3" alt="avatar"/>
+    <h1 className="f5 f4-ns fw6 mid-gray">{ h1Text }</h1>
+    <h2 className="f6 gray fw2 ttu tracked">{ h2Text }</h2>
+  </header>
 
 // Specifies the default values for props:
-InlineText.defaultProps = {
-  copyright: "©2048 Your Company LLC, Inc.",
-  links: [
-    {
-      href: "/terms",
-      hover: "hover-light-purple",
-      text: "Terms"
-    },
-    {
-      href: "/privacy",
-      hover: "hover-gold",
-      text: "Privacy"
-    },
-    {
-      href: "#",
-      hover: "hover-green",
-      text: "hi@yourcompany.com"
-    }
-  ]
+RoundedAvatarTitleSubtitle.defaultProps = {
+  imgSrc: "http://tachyons.io/img/logo.jpg",
+  h1Text: "Jasper Whitehouse",
+  h2Text: "Los Angeles"
 };
 
-InlineText.propTypes = {
-  copyright: React.PropTypes.string,
-  links: React.PropTypes.array
+RoundedAvatarTitleSubtitle.propTypes = {
+  imgSrc: React.PropTypes.string,
+  h1Text: React.PropTypes.string,
+  h2Text: React.PropTypes.string
 }
 
-export default InlineText
-
-
+export default RoundedAvatarTitleSubtitle
