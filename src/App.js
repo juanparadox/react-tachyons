@@ -27,6 +27,9 @@ import FooterExample from "./components/footers/FooterExample";
 // Headers
 import HeadersExample from "./components/headers/HeadersExample";
 
+// Article Lists
+import ArticleListsExample from "./components/articlelists/ArticleListsExample";
+
 class App extends Component {
   render() {
     return (
@@ -48,6 +51,7 @@ class App extends Component {
           <ListsExample/>
           <FooterExample/>
           <HeadersExample/>
+          <ArticleListsExample/>
         </section>
       </div>
     );
