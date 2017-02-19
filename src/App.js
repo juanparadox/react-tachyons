@@ -24,6 +24,9 @@ import ListsExample from "./components/lists/ListsExample";
 // Error Pages
 import ErrorPagesExample from "./components/errorpages/ErrorPagesExample";
 
+// Article Lists
+import ArticleListsExample from "./components/articlelists/ArticleListsExample";
+
 class App extends Component {
   render() {
     return (
@@ -44,6 +47,7 @@ class App extends Component {
           <LayoutExample/>
           <ListsExample/>
           <ErrorPagesExample/>
+          <ArticleListsExample/>
         </section>
       </div>
     );
