@@ -21,6 +21,9 @@ import FormExample from "./components/forms/FormsExample";
 // Lists
 import ListsExample from "./components/lists/ListsExample";
 
+ // Error Pages
+import ErrorPagesExample from "./components/errorpages/ErrorPagesExample";
+
 // Footer
 import FooterExample from "./components/footers/FooterExample";
 
@@ -54,6 +57,7 @@ class App extends Component {
           <FormExample/>
           <LayoutExample/>
           <ListsExample/>
+          <ErrorPagesExample/>
           <FooterExample/>
           <HeadersExample/>
           <ArticleListsExample/>
