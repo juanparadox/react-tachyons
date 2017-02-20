@@ -30,18 +30,23 @@ import HeadersExample from "./components/headers/HeadersExample";
 // Article Lists
 import ArticleListsExample from "./components/articlelists/ArticleListsExample";
 
+// Banners
+import BannersExample from "./components/banners/BannersExample";
+  
+  // Banners - Basic
+  import Basic from "./components/banners/Basic";
+
 class App extends Component {
   render() {
     return (
       <div>
-        <div className="mw9 center ph3 ph5-ns tc br2 pv5 bg-washed-green dark-green mb mt5">
-          <p className="f2">
-            React.JS + Tachyons component library
-          </p>
-          <p>
-            stateless react components and a whole lot of tachyons
-          </p>
-        </div>
+        <Basic
+          tagline="React.JS + Tachyons component library"
+          subline="stateless react components and a whole lot of tachyons"
+          small="Want to contribute?"
+          leftButton={{ text: "GitHub", href: "https://github.com/juanparadox/react-tachyons", bgColor: "bg-dark-green"}}
+          rightButton={{ text: "Issues", href: "https://github.com/juanparadox/react-tachyons/issues"}}
+        />
         <section className="ph5">
           <TextExample/>
           <LinksExample/>
@@ -52,6 +57,7 @@ class App extends Component {
           <FooterExample/>
           <HeadersExample/>
           <ArticleListsExample/>
+          <BannersExample/>
         </section>
       </div>
     );
