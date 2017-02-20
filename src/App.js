@@ -24,6 +24,9 @@ import ListsExample from "./components/lists/ListsExample";
 // Nav
 import NavExample from "./components/nav/NavExample";
 
+// Article Lists
+import ArticleListsExample from "./components/articlelists/ArticleListsExample";
+
 class App extends Component {
   render() {
     return (
@@ -44,6 +47,7 @@ class App extends Component {
           <FormExample/>
           <LayoutExample/>
           <ListsExample/>
+          <ArticleListsExample/>
         </section>
       </div>
     );
