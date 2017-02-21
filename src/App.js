@@ -35,9 +35,12 @@ import ArticleListsExample from "./components/articlelists/ArticleListsExample";
 
 // Banners
 import BannersExample from "./components/banners/BannersExample";
-  
-  // Banners - Basic
-  import Basic from "./components/banners/Basic";
+
+// Banners - Basic
+import Basic from "./components/banners/Basic";
+
+// Definition Lists
+import DefinitionListsExample from "./components/definitionlists/DefinitionListsExample";
 
 class App extends Component {
   render() {
@@ -62,6 +65,7 @@ class App extends Component {
           <HeadersExample/>
           <ArticleListsExample/>
           <BannersExample/>
+          <DefinitionListsExample />
         </section>
       </div>
     );
