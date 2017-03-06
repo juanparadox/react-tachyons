@@ -45,6 +45,9 @@ import DefinitionListsExample from "./components/definitionlists/DefinitionLists
 // quotes
 import QuotesExample from "./components/quotes/QuotesExample";
 
+// tables
+import TablesExample from "./components/tables/TablesExample";
+
 class App extends Component {
   render() {
     return (
@@ -70,6 +73,7 @@ class App extends Component {
           <BannersExample/>
           <DefinitionListsExample />
           <QuotesExample />
+          <TablesExample />
         </section>
       </div>
     );
