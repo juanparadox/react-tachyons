@@ -1,50 +1,66 @@
-// React
 import React from "react";
 
-// Nav
-import FixedSemiTransparent from "./FixedSemiTransparent";
-import LargeTitleLinkList from "./LargeTitleLinkList";
-import ListOverflow from "./ListOverflow";
-import LogoLinksInlineCollapse from "./LogoLinksInlineCollapse";
-import LogoLinksInline from "./LogoLinksInline";
-import LogoTitlesLinksCentered from "./LogoTitlesLinksCentered";
-import MinimalSignUp from "./MinimalSignUp";
-import TitleLinkList from "./TitleLinkList";
+const LogoTitleLinksCentered = ({ list, title, logo }) =>
+  <header className="bg-white black-80 tc pv4 avenir">
+    <a href="" className="bg-black-80 ba b--black dib pa3 w2 h2 br-100">
+      <svg className="white" data-icon={ logo.dataIcon } viewBox="0 0 32 32" style={{fill:'currentcolor'}}><title>{ logo.title }</title><path d={ logo.d }></path></svg>
+    </a>
+    <h1 className="mt2 mb0 baskerville i fw1 f1">Title</h1>
+    <h2 className="mt2 mb0 f6 fw4 ttu tracked">Your amazing subtitle</h2>
+    <nav className="bt bb tc mw7 center mt4">
+      { list.map((item, index) => <a className={`f6 f5-l link bg-animate black-80 ${item.hover} dib pa3 ph4-l`} href={ item.href } title={ item.title } key={ index }>{ item.text }</a>)}
+    </nav>
+  </header>
 
-export default () => (
-	<article id="links" className="measure-wide center pt4">
-        <h2 className="f2 lh-title">Forms</h2>
-        <section id="fixed-semi-transparent">
-        	<h3 className="f3 lh-copy">Fixed Semi Transparent</h3>
-            <FixedSemiTransparent/>
-        </section>
-        <section id="large-title-link-list">
-        	<h3 className="f3 lh-copy">Large Title Link List</h3>
-            <LargeTitleLinkList/>
-        </section>
-        <section id="list-overflow">
-        	<h3 className="f3 lh-copy">List Overflow</h3>
-            <ListOverflow/>
-        </section>
-        <section id="logo-links-inline-collapse">
-        	<h3 className="f3 lh-copy">Logo Links Inline Collapse</h3>
-            <LogoLinksInlineCollapse/>
-        </section>
-        <section id="logo-links-inline">
-        	<h3 className="f3 lh-copy">Logo Links Inline</h3>
-            <LogoLinksInline/>
-        </section>
-        <section id="logo-title-links-centered">
-        	<h3 className="f3 lh-copy">Logo Title Links Centered</h3>
-            <LogoTitlesLinksCentered/>
-        </section>
-        <section id="minimal-sign-up">
-        	<h3 className="f3 lh-copy">Minimal Sign Up</h3>
-            <MinimalSignUp/>
-        </section>
-        <section id="title-link-list">
-            <h3 className="f3 lh-copy">Title Link List</h3>
-            <TitleLinkList/>
-        </section>
-    </article>
-)
+// Specifies the default values for props:
+LogoTitleLinksCentered.defaultProps = {
+  logo: {
+    href: "",
+    dataIcon: "skull",
+    title: "skull icon",
+    d: "M16 0 C6 0 2 4 2 14 L2 22 L6 24 L6 30 L26 30 L26 24 L30 22 L30 14 C30 4 26 0 16 0 M9 12 A4.5 4.5 0 0 1 9 21 A4.5 4.5 0 0 1 9 12 M23 12 A4.5 4.5 0 0 1 23 21 A4.5 4.5 0 0 1 23 12"
+  },
+  title: "Title",
+  subtitle: "Your amazing subtitle",
+  list: [
+    {
+      text: "Home",
+      title: "Home",
+      href: "/",
+      hover: "hover-bg-lightest-blue"
+    },
+    {
+      text: "Portfolio",
+      title: "Portfolio",
+      href: "/portfolio",
+      hover: "hover-bg-light-green"
+    },
+    {
+      text: "Shop",
+      title: "Shop",
+      href: "/shop",
+      hover: "hover-bg-light-blue"
+    },
+    {
+      text: "About",
+      title: "About",
+      href: "/about",
+      hover: "hover-bg-light-pink"
+    },
+    {
+      text: "Contact",
+      title: "Contact",
+      href: "/contact",
+      hover: "hover-bg-light-yellow"
+    }
+  ]
+};
+
+LogoTitleLinksCentered.propTypes = {
+  logo: React.PropTypes.object,
+  title: React.PropTypes.string,
+  subtitle: React.PropTypes.string,
+  list: React.PropTypes.arrayOf(React.PropTypes.object)
+}
+
+export default LogoTitleLinksCentered

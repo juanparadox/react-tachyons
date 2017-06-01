@@ -1,50 +1,70 @@
-// React
 import React from "react";
 
-// Nav
-import FixedSemiTransparent from "./FixedSemiTransparent";
-import LargeTitleLinkList from "./LargeTitleLinkList";
-import ListOverflow from "./ListOverflow";
-import LogoLinksInlineCollapse from "./LogoLinksInlineCollapse";
-import LogoLinksInline from "./LogoLinksInline";
-import LogoTitlesLinksCentered from "./LogoTitlesLinksCentered";
-import MinimalSignUp from "./MinimalSignUp";
-import TitleLinkList from "./TitleLinkList";
+const ListOverflow = ({ links }) =>
+  <nav className="ph3 ph5-ns pv4">
+    <div className="nowrap overflow-x-auto">
+      { links.map((item, index) => <a className="link dim gray f5 f4-ns dib mr3" href={ item.href } title={ item.title } key={ index }>{ item.text }</a>)}
+    </div>
+  </nav>
 
-export default () => (
-	<article id="links" className="measure-wide center pt4">
-        <h2 className="f2 lh-title">Forms</h2>
-        <section id="fixed-semi-transparent">
-        	<h3 className="f3 lh-copy">Fixed Semi Transparent</h3>
-            <FixedSemiTransparent/>
-        </section>
-        <section id="large-title-link-list">
-        	<h3 className="f3 lh-copy">Large Title Link List</h3>
-            <LargeTitleLinkList/>
-        </section>
-        <section id="list-overflow">
-        	<h3 className="f3 lh-copy">List Overflow</h3>
-            <ListOverflow/>
-        </section>
-        <section id="logo-links-inline-collapse">
-        	<h3 className="f3 lh-copy">Logo Links Inline Collapse</h3>
-            <LogoLinksInlineCollapse/>
-        </section>
-        <section id="logo-links-inline">
-        	<h3 className="f3 lh-copy">Logo Links Inline</h3>
-            <LogoLinksInline/>
-        </section>
-        <section id="logo-title-links-centered">
-        	<h3 className="f3 lh-copy">Logo Title Links Centered</h3>
-            <LogoTitlesLinksCentered/>
-        </section>
-        <section id="minimal-sign-up">
-        	<h3 className="f3 lh-copy">Minimal Sign Up</h3>
-            <MinimalSignUp/>
-        </section>
-        <section id="title-link-list">
-            <h3 className="f3 lh-copy">Title Link List</h3>
-            <TitleLinkList/>
-        </section>
-    </article>
-)
+// Specifies the default values for props:
+ListOverflow.defaultProps = {
+  links: [
+    {
+      text: "Link 1",
+      title: "Link 1",
+      href: "#"
+    },
+    {
+      text: "Link 2",
+      title: "Link 2",
+      href: "#"
+    },
+    {
+      text: "Link 3",
+      title: "Link 3",
+      href: "#"
+    },
+    {
+      text: "Link 4",
+      title: "Link 4",
+      href: "#"
+    },
+    {
+      text: "Link 5",
+      title: "Link 5",
+      href: "#"
+    },
+    {
+      text: "Link 6",
+      title: "Link 6",
+      href: "#"
+    },
+    {
+      text: "Link 7",
+      title: "Link 7",
+      href: "#"
+    },
+    {
+      text: "Link 8",
+      title: "Link 8",
+      href: "#"
+    },
+    {
+      text: "Link 9",
+      title: "Link 9",
+      href: "#"
+    },
+    {
+      text: "Link 10",
+      title: "Link 10",
+      href: "#"
+    },
+  ]
+};
+
+ListOverflow.propTypes = {
+  links: React.PropTypes.arrayOf(React.PropTypes.object)
+}
+
+export default ListOverflow

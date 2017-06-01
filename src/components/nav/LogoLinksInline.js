@@ -1,50 +1,48 @@
-// React
 import React from "react";
 
-// Nav
-import FixedSemiTransparent from "./FixedSemiTransparent";
-import LargeTitleLinkList from "./LargeTitleLinkList";
-import ListOverflow from "./ListOverflow";
-import LogoLinksInlineCollapse from "./LogoLinksInlineCollapse";
-import LogoLinksInline from "./LogoLinksInline";
-import LogoTitlesLinksCentered from "./LogoTitlesLinksCentered";
-import MinimalSignUp from "./MinimalSignUp";
-import TitleLinkList from "./TitleLinkList";
+const LogoLinksInline = ({ list, title, img }) =>
+  <nav className="dt w-100 border-box pa3 ph5-ns">
+    <a className="dtc v-mid mid-gray link dim w-25" href={ title.href } title={ title.title }>
+      <img src={ img.src } className="dib w2 h2 br-100" alt={ img.alt }/>
+    </a>
+    <div className="dtc v-mid w-75 tr">
+      { list.map((item, index) => <a className={`link dim dark-gray f6 f5-ns dib ${index !== list.length - 1 && 'mr3 mr4-ns'}`} href={ item.href } title={ item.title } key={ index }>{ item.text }</a>)}
+    </div>
+  </nav>
 
-export default () => (
-	<article id="links" className="measure-wide center pt4">
-        <h2 className="f2 lh-title">Forms</h2>
-        <section id="fixed-semi-transparent">
-        	<h3 className="f3 lh-copy">Fixed Semi Transparent</h3>
-            <FixedSemiTransparent/>
-        </section>
-        <section id="large-title-link-list">
-        	<h3 className="f3 lh-copy">Large Title Link List</h3>
-            <LargeTitleLinkList/>
-        </section>
-        <section id="list-overflow">
-        	<h3 className="f3 lh-copy">List Overflow</h3>
-            <ListOverflow/>
-        </section>
-        <section id="logo-links-inline-collapse">
-        	<h3 className="f3 lh-copy">Logo Links Inline Collapse</h3>
-            <LogoLinksInlineCollapse/>
-        </section>
-        <section id="logo-links-inline">
-        	<h3 className="f3 lh-copy">Logo Links Inline</h3>
-            <LogoLinksInline/>
-        </section>
-        <section id="logo-title-links-centered">
-        	<h3 className="f3 lh-copy">Logo Title Links Centered</h3>
-            <LogoTitlesLinksCentered/>
-        </section>
-        <section id="minimal-sign-up">
-        	<h3 className="f3 lh-copy">Minimal Sign Up</h3>
-            <MinimalSignUp/>
-        </section>
-        <section id="title-link-list">
-            <h3 className="f3 lh-copy">Title Link List</h3>
-            <TitleLinkList/>
-        </section>
-    </article>
-)
+// Specifies the default values for props:
+LogoLinksInline.defaultProps = {
+  img: {
+    src: "http://tachyons.io/img/logo.jpg",
+    alt: "Site Name"
+  },
+  title: {
+    title: "Site Name",
+    href: "#"
+  },
+  list: [
+    {
+      text: "Services",
+      title: "Services",
+      href: "#"
+    },
+    {
+      text: "Blog",
+      title: "Blog",
+      href: "#"
+    },
+    {
+      text: "Contact",
+      title: "Contact",
+      href: "#"
+    }
+  ]
+};
+
+LogoLinksInline.propTypes = {
+  img: React.PropTypes.object,
+  title: React.PropTypes.object,
+  list: React.PropTypes.arrayOf(React.PropTypes.object)
+}
+
+export default LogoLinksInline
