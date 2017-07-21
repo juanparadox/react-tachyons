@@ -7,7 +7,7 @@ import Info from './Info';
 import SingleCTA from './SingleCTA';
 
 export default () => (
-    <article id="banners" className="measure-wide center pt4">
+    <article id="banners" className="center pt4">
         <h2 className="f2 lh-title">Banners</h2>
         <section id="basic">
             <h3 className="f3 lh-copy">Basic</h3>

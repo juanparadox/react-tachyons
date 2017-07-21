@@ -6,7 +6,7 @@ import TitlePreviewAuthorMediaFlipped from './TitlePreviewAuthorMediaFlipped';
 import TitlePreviewAuthorMedia from './TitlePreviewAuthorMedia';
 
 export default () => (
-    <article id="lists" className="measure-wide center pt4">
+    <article id="lists" className="center pt4">
         <h2 className="f2 lh-title">Article Lists</h2>
         <section id="title-preview-author-media-flipped">
             <h3 className="f3 lh-copy">TitlePreviewAuthorMediaFlipped</h3>

@@ -8,7 +8,7 @@ import DimNoUnderline from "./DimNoUnderline.js";
 import UnderlineOnHover from "./UnderlineOnHover.js";
 
 export default () => (
-	<article id="links" className="measure-wide center pt4">
+	<article id="links" className="center pt4">
         <h2 className="f2 lh-title">Links</h2>
         <section id="animate-background-color">
         	<h3 className="f3 lh-copy">Animate Background Color</h3>

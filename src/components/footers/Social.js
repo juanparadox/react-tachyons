@@ -2,9 +2,9 @@ import React from "react";
 
 const Social = ({ icons, links }) =>
 	<footer className="pv4 ph3 ph5-ns tc">
-    { icons.map((item, index) => 
+    { icons.map((item, index) =>
       <a className="link dim gray dib h2 w2 br-100 mr3" href={ item.href } title={ item.title } key={ index }>
-        <svg data-icon={ item.dataIcon } viewBox="0 0 32 32" style={{ fill: "currentColor" }}>
+        <svg data-icon={ item.dataIcon } viewBox="0 0 32 32" style={{ fill: "currentColor" }} title={ item.title }>
           <title>{ item.title }</title>
           <path d={ item.d }></path>
         </svg>
@@ -70,5 +70,3 @@ Social.propTypes = {
 }
 
 export default Social
-
-

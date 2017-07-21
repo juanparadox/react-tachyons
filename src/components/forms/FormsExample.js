@@ -11,7 +11,7 @@ import SignUp from "./SignUp";
 import TextareaLabel from "./TextareaLabel";
 
 export default () => (
-	<article id="links" className="measure-wide center pt4">
+	<article id="links" className="center pt4">
         <h2 className="f2 lh-title">Forms</h2>
         <section id="checkbox-list">
         	<h3 className="f3 lh-copy">Checkbox List</h3>

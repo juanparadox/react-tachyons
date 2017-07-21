@@ -36,6 +36,9 @@ import HeadersExample from "./components/headers/HeadersExample";
 // Article Lists
 import ArticleListsExample from "./components/articlelists/ArticleListsExample";
 
+// Articles
+import ArticlesExample from "./components/articles/ArticlesExample";
+
 // Banners
 import BannersExample from "./components/banners/BannersExample";
 
@@ -73,6 +76,7 @@ class App extends Component {
           <FooterExample/>
           <HeadersExample/>
           <ArticleListsExample/>
+          <ArticlesExample/>
           <BannersExample/>
           <DefinitionListsExample />
           <QuotesExample />

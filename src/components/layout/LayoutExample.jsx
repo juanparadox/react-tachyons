@@ -13,7 +13,7 @@ import FullBleed from './FullBleed';
 import FullScreenCenteredTitle from './FullScreenCenteredTitle';
 
 export default () => (
-    <article id="layout" className="measure-wide center pt4">
+    <article id="layout" className="center pt4">
         <h2 className="f2 lh-title">Layout</h2>
         <section id="aspect-ratio">
             <h3 className="f3 lh-copy">AspectRatio</h3>
