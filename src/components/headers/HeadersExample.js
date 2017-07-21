@@ -7,7 +7,7 @@ import RoundedAvatarTitleSubtitle from "./RoundedAvatarTitleSubtitle";
 import StartupHero from "./StartupHero";
 
 export default () => (
-	<article id="links" className="measure-wide center pt4">
+	<article id="links" className="center pt4">
         <h2 className="f2 lh-title">Headers</h2>
         <section id="circle-avatar-title-subtitle">
         	<h3 className="f3 lh-copy">Circle Avatar Title Subtitle</h3>

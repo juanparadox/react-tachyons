@@ -21,9 +21,6 @@ import FormExample from "./components/forms/FormsExample";
 // Lists
 import ListsExample from "./components/lists/ListsExample";
 
-// Nav
-import NavExample from "./components/nav/NavExample";
-
  // Error Pages
 import ErrorPagesExample from "./components/errorpages/ErrorPagesExample";
 
@@ -81,7 +78,6 @@ class App extends Component {
           <DefinitionListsExample />
           <QuotesExample />
           <TablesExample />
-          <NavExample/>
         </section>
       </div>
     );

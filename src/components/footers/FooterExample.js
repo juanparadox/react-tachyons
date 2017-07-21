@@ -13,7 +13,7 @@ import Social from "./Social.js";
 import Studios from "./Studios.js";
 
 export default () => (
-	<article id="footers" className="measure-wide center pt4">
+	<article id="footers" className="center pt4">
         <h2 className="f2 lh-title">Footer</h2>
         <section id="centered-icons-hover-glow">
         	<h3 className="f3 lh-copy">Centered Icons Hover Glow</h3>

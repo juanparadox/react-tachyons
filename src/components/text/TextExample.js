@@ -11,7 +11,7 @@ import WideParagraph from "./WideParagraph.js";
 import TitleSubtitleCentered from "./TitleSubtitleCentered.js";
 
 export default () => (
-	<article id="text" className="measure-wide center pt4">
+	<article id="text" className="center pt4">
         <h2 className="f2 lh-title">Text</h2>
         <section id="large-paragraph">
         	<h3 className="f3 lh-copy">Large Paragraph</h3>
