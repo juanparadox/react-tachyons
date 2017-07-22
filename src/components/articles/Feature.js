@@ -52,7 +52,7 @@ const Feature = ({ title, featureImage }) => (
 );
 
 Feature.defaultProps = {
-    featureImage: "http://mrmrs.io/photos/u/009.jpg",
+    featureImage: "http://mrmrs.github.io/photos/u/009.jpg",
     title: "The repercussion of ugliness is endless"
 };
 

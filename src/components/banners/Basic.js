@@ -12,11 +12,11 @@ const Basic = ({ bgColor, fontColor, tagline, subline, small, leftButton, rightB
         { small }
       </p>
       <div>
-        <a className={ leftButton.bgColor + " f6 br-pill no-underline washed-green ba b--dark-green grow pv2 ph3 dib mr3" }
+        <a className={ `bg-${leftButton.bgColor} b--${leftButton.bgColor} f6 br-pill no-underline washed-green ba grow pv2 ph3 dib mr3` }
           href={ leftButton.href }>
           { leftButton.text }
         </a>
-        <a className={ rightButton.bgColor + " f6 br-pill dark-green no-underline ba grow pv2 ph3 dib" }
+        <a className={ `b--${leftButton.bgColor} ${leftButton.bgColor} f6 br-pill no-underline ba grow pv2 ph3 dib` }
           href={ rightButton.href }>
           { rightButton.text }
         </a>
@@ -31,12 +31,11 @@ Basic.defaultProps = {
     subline: "This will change things. And we want you to be involved. This text needs to be longer for testing sake.",
     small: "Sign up for beta access or learn more about x.",
     leftButton: {
-      bgColor: "bg-dark-green",
+      bgColor: "dark-green",
       text: "Sign Up",
       href: "#"
     },
     rightButton: {
-      bgColor: "",
       text: "Learn More",
       href: "#"
     }

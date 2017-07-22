@@ -27,21 +27,21 @@ const ItemsImageTitlePrice = ({ list }) => (
 ItemsImageTitlePrice.defaultProps = {
     list: [
         {
-            img: 'http://mrmrs.io/images/0002.jpg',
+            img: 'http://mrmrs.github.io/images/0002.jpg',
             href: '#',
             title: 'Grid Systems',
             subtitle: 'Josef Müller-Brockmann',
             price: '$75.00'
         },
         {
-            img: 'http://mrmrs.io/images/0010.jpg',
+            img: 'http://mrmrs.github.io/images/0010.jpg',
             href: '#',
             title: 'History of the Poster',
             subtitle: 'Josef Müller-Brockmann',
             price: '$15.00'
         },
         {
-            img: 'http://mrmrs.io/images/0004.jpg',
+            img: 'http://mrmrs.github.io/images/0004.jpg',
             href: '#',
             title: 'Graphic Design in IBM: Typography, Photography, and Illustration',
             subtitle: 'Josef Müller-Brockmann',

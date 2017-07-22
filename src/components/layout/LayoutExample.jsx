@@ -18,27 +18,27 @@ export default () => (
         <section id="aspect-ratio">
             <h3 className="f3 lh-copy">AspectRatio</h3>
             16x9
-            <AspectRatio img="http://mrmrs.io/photos/001.jpg" ratio="16x9"/>
+            <AspectRatio img="http://mrmrs.github.io/photos/001.jpg" ratio="16x9"/>
             1x1
-            <AspectRatio img="http://mrmrs.io/photos/001.jpg" ratio="1x1"/>
+            <AspectRatio img="http://mrmrs.github.io/photos/001.jpg" ratio="1x1"/>
             3x4
-            <AspectRatio img="http://mrmrs.io/photos/001.jpg" ratio="3x4"/>
+            <AspectRatio img="http://mrmrs.github.io/photos/001.jpg" ratio="3x4"/>
             4x3
-            <AspectRatio img="http://mrmrs.io/photos/001.jpg" ratio="4x3"/>
+            <AspectRatio img="http://mrmrs.github.io/photos/001.jpg" ratio="4x3"/>
             4x6
-            <AspectRatio img="http://mrmrs.io/photos/001.jpg" ratio="4x6"/>
+            <AspectRatio img="http://mrmrs.github.io/photos/001.jpg" ratio="4x6"/>
             5x7
-            <AspectRatio img="http://mrmrs.io/photos/001.jpg" ratio="5x7"/>
+            <AspectRatio img="http://mrmrs.github.io/photos/001.jpg" ratio="5x7"/>
             5x8
-            <AspectRatio img="http://mrmrs.io/photos/001.jpg" ratio="5x8"/>
+            <AspectRatio img="http://mrmrs.github.io/photos/001.jpg" ratio="5x8"/>
             6x4
-            <AspectRatio img="http://mrmrs.io/photos/001.jpg" ratio="6x4"/>
+            <AspectRatio img="http://mrmrs.github.io/photos/001.jpg" ratio="6x4"/>
             7x5
-            <AspectRatio img="http://mrmrs.io/photos/001.jpg" ratio="7x5"/>
+            <AspectRatio img="http://mrmrs.github.io/photos/001.jpg" ratio="7x5"/>
             8x5
-            <AspectRatio img="http://mrmrs.io/photos/001.jpg" ratio="8x5"/>
+            <AspectRatio img="http://mrmrs.github.io/photos/001.jpg" ratio="8x5"/>
             9x16
-            <AspectRatio img="http://mrmrs.io/photos/001.jpg" ratio="9x16"/>
+            <AspectRatio img="http://mrmrs.github.io/photos/001.jpg" ratio="9x16"/>
         </section>
         <section id="centered-container">
             <h3 className="f3 lh-copy">CenteredContainer</h3>
