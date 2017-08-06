@@ -49,9 +49,11 @@ import TablesExample from "../tables/TablesExample";
 
 const Components = () =>
   <section className="ph5">
+    { /*The below code is how we can possibly show the list of components where the visitor can click on a component to view more about it */}
     <h2 className="f2 lh-title">Article Lists</h2>
     <h3><a href="/rt/components/article-lists/title-preview-author-media" className="no-underline black f3 lh-copy">TitlePreviewAuthorMedia</a></h3>
     <h3><a href="/rt/components/article-lists/title-preview-author-media-flipped" className="no-underline black f3 lh-copy">TitlePreviewAuthorMediaFlipped</a></h3>
+    { /*The below code is how the components were showing */}
     <ArticleListsExample/>
     <ArticlesExample/>
     <TextExample/>
