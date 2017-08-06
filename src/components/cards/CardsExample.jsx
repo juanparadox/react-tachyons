@@ -6,6 +6,10 @@ import Album from "./Album";
 import BasicTextCard from "./BasicTextCard";
 import NewsCard from "./NewsCard";
 import ProductCard from "./ProductCard";
+import ProfileCardTitleSubtitle from "./ProfileCardTitleSubtitle";
+import ProfileCard from "./ProfileCard";
+import TextCard from "./TextCard";
+import SuggestedProfile from "./SuggestedProfile";
 
 export default () =>
 	<article id="cards" className="center pt4">
@@ -37,5 +41,25 @@ export default () =>
 			<h3 className="f3 lh-copy">ProductCard</h3>
 			<code className="db mb3">Props: publisher, img, headline, url, source, timestamp</code>
 			<ProductCard />
+		</section>
+		<section id="profile-card-title-subtitle">
+			<h3 className="f3 lh-copy">ProfileCardTitleSubtitle</h3>
+			<code className="db mb3">Props: title, subtitle, img</code>
+			<ProfileCardTitleSubtitle />
+		</section>
+		<section id="profile-card-title-subtitle">
+			<h3 className="f3 lh-copy">ProfileCard</h3>
+			<code className="db mb3">Props: title, description, img</code>
+			<ProfileCard />
+		</section>
+		<section id="text-card">
+			<h3 className="f3 lh-copy">TextCard</h3>
+			<code className="db mb3">Props: title, text</code>
+			<TextCard />
+		</section>
+		<section id="suggested-profile">
+			<h3 className="f3 lh-copy">SuggestedProfile</h3>
+			<code className="db mb3">Props: title, subtitle, buttonText, img</code>
+			<SuggestedProfile />
 		</section>
 	</article>;
