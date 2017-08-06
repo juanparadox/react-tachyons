@@ -5,6 +5,7 @@ import React from "react";
 import Album from "./Album";
 import BasicTextCard from "./BasicTextCard";
 import NewsCard from "./NewsCard";
+import ProductCard from "./ProductCard";
 
 export default () =>
 	<article id="cards" className="center pt4">
@@ -31,5 +32,10 @@ export default () =>
 			<h3 className="f3 lh-copy">NewsCard</h3>
 			<code className="db mb3">Props: publisher, img, headline, url, source, timestamp</code>
 			<NewsCard />
+		</section>
+		<section id="product-card">
+			<h3 className="f3 lh-copy">ProductCard</h3>
+			<code className="db mb3">Props: publisher, img, headline, url, source, timestamp</code>
+			<ProductCard />
 		</section>
 	</article>;
