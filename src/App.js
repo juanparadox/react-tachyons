@@ -54,6 +54,9 @@ import QuotesExample from "./components/quotes/QuotesExample";
 // tables
 import TablesExample from "./components/tables/TablesExample";
 
+// Cards
+import CardsExample from "./components/cards/CardsExample";
+
 // Avatars
 import AvatarsExample from "./components/avatars/AvatarsExample";
 
@@ -85,6 +88,7 @@ class App extends Component {
 					<QuotesExample />
 					<TablesExample />
 					<NavExample />
+					<CardsExample />
 					<AvatarsExample />
 				</section>
 			</div>
