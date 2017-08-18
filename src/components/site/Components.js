@@ -1,75 +1,48 @@
 import React from "react";
-// Text
-import TextExample from "../text/TextExample";
+import {Switch, Route} from 'react-router-dom';
+import {
+  ArticleListsExample,
+  ArticlesExample,
+  BannersExample,
+  ButtonExample,
+  DefinitionListsExample,
+  ErrorPagesExample,
+  FooterExample,
+  FormExample,
+  HeadersExample,
+  LayoutExample,
+  LinksExample,
+  ListsExample,
+  NavExample,
+  QuotesExample,
+  TablesExample,
+  TextExample
+} from '../../components'
 
-// Links
-import LinksExample from "../links/LinksExample";
 
-// Layout
-import LayoutExample from "../layout/LayoutExample";
-
-// Buttons
-import ButtonExample from "../buttons/ButtonExample";
-
-// Forms
-import FormExample from "../forms/FormsExample";
-
-// Lists
-import ListsExample from "../lists/ListsExample";
-
-// Nav
-import NavExample from "../nav/NavExample";
-
- // Error Pages
-import ErrorPagesExample from "../errorpages/ErrorPagesExample";
-
-// Footer
-import FooterExample from "../footers/FooterExample";
-
-// Headers
-import HeadersExample from "../headers/HeadersExample";
-
-// Article Lists
-import ArticleListsExample from "../articlelists/ArticleListsExample";
-
-// Articles
-import ArticlesExample from "../articles/ArticlesExample";
-
-// Banners
-import BannersExample from "../banners/BannersExample";
-
-// Definition Lists
-import DefinitionListsExample from "../definitionlists/DefinitionListsExample";
-
-// quotes
-import QuotesExample from "../quotes/QuotesExample";
-
-// tables
-import TablesExample from "../tables/TablesExample";
+import Links from './Links'
 
 const Components = () =>
-  <section className="ph5">
-    { /*The below code is how we can possibly show the list of components where the visitor can click on a component to view more about it */}
-    <h2 className="f2 lh-title">Article Lists</h2>
-    <h3><a href="/rt/components/article-lists/title-preview-author-media" className="no-underline black f3 lh-copy">TitlePreviewAuthorMedia</a></h3>
-    <h3><a href="/rt/components/article-lists/title-preview-author-media-flipped" className="no-underline black f3 lh-copy">TitlePreviewAuthorMediaFlipped</a></h3>
-    { /*The below code is how the components were showing */}
-    <ArticleListsExample/>
-    <ArticlesExample/>
-    <TextExample/>
-    <LinksExample/>
-    <ButtonExample/>
-    <FormExample/>
-    <LayoutExample/>
-    <ListsExample/>
-    <ErrorPagesExample/>
-    <FooterExample/>
-    <HeadersExample/>
-    <BannersExample/>
-    <DefinitionListsExample />
-    <QuotesExample />
-    <TablesExample />
-    <NavExample/>
+  <section className="ph5 pb5">
+    <Switch>
+      <Route exact path="/components" component={Links}/>
+      <Route path="/components/article-lists" component={ArticleListsExample}/>
+      <Route path="/components/articles" component={ArticlesExample}/>
+      <Route path="/components/banners" component={BannersExample}/>
+      <Route path="/components/button" component={ButtonExample}/>
+      <Route path="/components/definition-lists" component={DefinitionListsExample}/>
+      <Route path="/components/error-pages" component={ErrorPagesExample}/>
+      <Route path="/components/footers" component={FooterExample}/>
+      <Route path="/components/forms" component={FormExample}/>
+      <Route path="/components/headers" component={HeadersExample}/>
+      <Route path="/components/layout" component={LayoutExample}/>
+      <Route path="/components/links" component={LinksExample}/>
+      <Route path="/components/lists" component={ListsExample}/>
+      <Route path="/components/nav" component={NavExample}/>
+      <Route path="/components/quotes" component={QuotesExample}/>
+      <Route path="/components/tables" component={TablesExample}/>
+      <Route path="/components/text" component={TextExample}/>
+    </Switch>
   </section>
 
 export default Components
