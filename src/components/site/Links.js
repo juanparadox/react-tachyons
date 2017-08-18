@@ -5,8 +5,10 @@ const Links = () =>
   <div>
     <Link to="/components/article-lists" className="hover-blue link black-70 f3 lh-title fw6 db">Article Lists</Link>
     <Link to="/components/articles" className="hover-blue link black-70 f3 lh-title fw6 db">Articles</Link>
+    <Link to="/components/avatars" className="hover-blue link black-70 f3 lh-title fw6 db">Avatars</Link>
     <Link to="/components/banners" className="hover-blue link black-70 f3 lh-title fw6 db">Banners</Link>
     <Link to="/components/button" className="hover-blue link black-70 f3 lh-title fw6 db">Buttons</Link>
+    <Link to="/components/cards" className="hover-blue link black-70 f3 lh-title fw6 db">Cards</Link>
     <Link to="/components/definition-lists" className="hover-blue link black-70 f3 lh-title fw6 db">Definition Lists</Link>
     <Link to="/components/error-pages" className="hover-blue link black-70 f3 lh-title fw6 db">Error Pages</Link>
     <Link to="/components/footers" className="hover-blue link black-70 f3 lh-title fw6 db">Footers</Link>

@@ -45,3 +45,9 @@ export { default as QuotesExample } from "./quotes/QuotesExample";
 
 // tables
 export { default as TablesExample } from "./tables/TablesExample";
+
+// Cards
+export { default as CardsExample } from "./cards/CardsExample";
+
+// Avatars
+export { default as AvatarsExample } from "./avatars/AvatarsExample";

@@ -3,8 +3,10 @@ import {Switch, Route} from 'react-router-dom';
 import {
   ArticleListsExample,
   ArticlesExample,
+  AvatarsExample,
   BannersExample,
   ButtonExample,
+  CardsExample,
   DefinitionListsExample,
   ErrorPagesExample,
   FooterExample,
@@ -28,8 +30,10 @@ const Components = () =>
       <Route exact path="/components" component={Links}/>
       <Route path="/components/article-lists" component={ArticleListsExample}/>
       <Route path="/components/articles" component={ArticlesExample}/>
+      <Route path="/components/avatars" component={AvatarsExample}/>
       <Route path="/components/banners" component={BannersExample}/>
       <Route path="/components/button" component={ButtonExample}/>
+      <Route path="/components/cards" component={CardsExample}/>
       <Route path="/components/definition-lists" component={DefinitionListsExample}/>
       <Route path="/components/error-pages" component={ErrorPagesExample}/>
       <Route path="/components/footers" component={FooterExample}/>
