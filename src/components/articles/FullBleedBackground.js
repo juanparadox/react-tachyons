@@ -25,7 +25,7 @@ const FullBleedBackground = ({ featureImage, title, subtitle }) => (
 );
 
 FullBleedBackground.defaultProps = {
-    featureImage: "http://mrmrs.io/photos/12.jpg",
+    featureImage: "http://mrmrs.github.io/photos/12.jpg",
     title: "Prasat Suor Prat",
     subtitle: "Siem Reap, Cambodia"
 };

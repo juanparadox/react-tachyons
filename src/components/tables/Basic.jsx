@@ -14,8 +14,8 @@ const Striped = ({ columns, data }) => (
         <tbody className="lh-copy">{
             data.map((arr, i) =>
                 <tr key={i}>{
-                    arr.map((text, i) =>
-                        <td className="pv3 pr3 bb b--black-20" key={i}>{text}</td>
+                    arr.map((text, j) =>
+                        <td className="pv3 pr3 bb b--black-20" key={j+'z'}>{text}</td>
                     )
                 }</tr>
             )

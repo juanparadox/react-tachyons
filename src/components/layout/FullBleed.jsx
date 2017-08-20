@@ -12,10 +12,10 @@ function random(start, end){
 const Default = {
     ratio: "16x9",
     imgList: [
-        `http://mrmrs.io/images/00${random(1,5)}.jpg`,
-        `http://mrmrs.io/images/00${random(6,10)}.jpg`,
-        `http://mrmrs.io/images/00${random(11,15)}.jpg`,
-        `http://mrmrs.io/images/00${random(16,20)}.jpg`
+        `http://mrmrs.github.io/images/00${random(1,5)}.jpg`,
+        `http://mrmrs.github.io/images/00${random(6,10)}.jpg`,
+        `http://mrmrs.github.io/images/00${random(11,15)}.jpg`,
+        `http://mrmrs.github.io/images/00${random(16,20)}.jpg`
     ]
 }
 

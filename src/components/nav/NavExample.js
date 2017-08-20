@@ -12,8 +12,8 @@ import MinimalSignUp from "./MinimalSignUp";
 import TitleLinkList from "./TitleLinkList";
 
 export default () => (
-	<article id="links" className="measure-wide center pt4">
-        <h2 className="f2 lh-title">Forms</h2>
+	<article id="nav" className="center pt4">
+        <h2 className="f2 lh-title">Nav</h2>
         <section id="fixed-semi-transparent">
         	<h3 className="f3 lh-copy">Fixed Semi Transparent</h3>
             <FixedSemiTransparent/>

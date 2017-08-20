@@ -47,21 +47,21 @@ const FollowerNotifications = ({ list, imgShape }) => (
 FollowerNotifications.defaultProps = {
     list: [
         {
-            img: 'http://mrmrs.io/photos/p/2.jpg',
+            img: 'http://mrmrs.github.io/photos/p/2.jpg',
             name: 'Young Gatchell',
             handle: '@yg',
             buttonText: '+ Follow',
             onClick: (e) => { console.log(e) }
         },
         {
-            img: 'http://mrmrs.io/photos/p/3.jpg',
+            img: 'http://mrmrs.github.io/photos/p/3.jpg',
             name: 'Arnoldo Degraff',
             handle: '@99xx88randomhandle',
             buttonText: 'Unfollow',
             onClick: (e) => { console.log(e) }
         },
         {
-            img: 'http://mrmrs.io/photos/p/4.jpg',
+            img: 'http://mrmrs.github.io/photos/p/4.jpg',
             name: 'Deirdre Lachance',
             handle: '@favfavfav',
             buttonText: '+ Follow',

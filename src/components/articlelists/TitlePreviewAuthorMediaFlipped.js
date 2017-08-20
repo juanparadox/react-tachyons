@@ -30,7 +30,7 @@ TitlePreviewAuthorMediaFlipped.defaultProps = {
             title: "Tech Giant Invests Huge Money to Build a Computer Out of Science Fiction",
             content: "The tech giant says it is ready to begin planning a quantum computer, a powerful cpu machine that relies on subatomic particles instead of transistors.",
             img: {
-                src: "http://mrmrs.io/photos/cpu.jpg",
+                src: "http://mrmrs.github.io/photos/cpu.jpg",
                 alt: "Photo of a dimly lit room with a computer interface terminal."
             },
             by: "Robin Darnell",
@@ -40,7 +40,7 @@ TitlePreviewAuthorMediaFlipped.defaultProps = {
             title: "A whale takes up residence in a large body of water",
             content: "This giant of a whale says it is ready to begin planning a new swim later this afternoon. A powerful mammal that relies on fish and plankton instead of hamburgers.",
             img: {
-                src: "http://mrmrs.io/photos/whale.jpg",
+                src: "http://mrmrs.github.io/photos/whale.jpg",
                 alt: "Photo of a whale's tale coming crashing out of the water."
             },
             by: "Katherine Grant",
@@ -50,7 +50,7 @@ TitlePreviewAuthorMediaFlipped.defaultProps = {
             title: "‘We Couldn’t Believe Our Eyes’: A Lost World of Vinyl Is Found",
             content: "Archaeologists have found more than 40 tons of vinyl records, some more than a five years old, shedding light on early hipster trends.",
             img: {
-                src: "http://mrmrs.io/photos/warehouse.jpg",
+                src: "http://mrmrs.github.io/photos/warehouse.jpg",
                 alt: "Photo of a warehouse with stacked shelves."
             },
             by: "Imelda Clancy",
